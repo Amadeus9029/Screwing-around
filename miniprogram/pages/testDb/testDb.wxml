@@ -1,0 +1,9 @@
+<!--pages/testDb.wxml-->
+<view wx:for="{{goodList}}" wx:key="index">
+    <text>商品名：{{item.name}} 价格：{{item.price}}</text>
+</view>
+<view>
+    <input bindinput="doNothing" placeholder="商品名" model:value="{{goodName}}" />
+    <input bindinput="doNothing" placeholder="价格" model:value="{{goodPrice}}" />
+    <button bindtap="addGood">添加商品</button>
+</view>

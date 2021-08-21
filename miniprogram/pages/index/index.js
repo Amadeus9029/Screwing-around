@@ -108,6 +108,11 @@ Page({
       url: `/pages/${e.currentTarget.dataset.page}/index?envId=${this.data.selectedEnv.envId}`,
     })
   },
+  showDb(e){
+    wx.navigateTo({
+      url: `/pages/testDb/testDb`,
+    })
+  },
 
   onClickDatabase(powerList) {
     wx.showLoading({
